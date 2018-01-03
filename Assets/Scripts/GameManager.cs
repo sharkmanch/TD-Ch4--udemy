@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManager : MonoBehaviour {
+public class GameManager : MonoBehaviour
+{
     public static GameManager instance = null;
     //creating the one single instance of game manager 
 
 
     public GameObject spawnPoint;
-    
+
 
     public GameObject[] enemies;
     public int maxEnemiesOnScreen;
@@ -31,15 +32,16 @@ public class GameManager : MonoBehaviour {
     }
 
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
         spawnEnemy();
-	}
+    }
 
     void spawnEnemy()
     {
-        if(enemiesPerSpawn > 0 && enemiesOnScreen < totalEnemies)
+        if (enemiesPerSpawn > 0 && enemiesOnScreen < totalEnemies)
         {
-            for(int i = 0; i < enemiesPerSpawn; i++)
+            for (int i = 0; i < enemiesPerSpawn; i++)
             {
                 if (enemiesOnScreen < maxEnemiesOnScreen)
                 {
@@ -50,6 +52,16 @@ public class GameManager : MonoBehaviour {
             }
         }
 
+    }
+
+    public void removeEnemyFromScreen()
+    {
+        if (enemiesOnScreen > 0)
+        {
+            enemiesOnScreen -= 1;
+        }
+        GameManager.instance.removeEnemyFromScreen();
+        Destroy(gameObject);
     }
 
 
