@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 95891887748379602}
   - component: {fileID: 50886311292038094}
   - component: {fileID: 61044298502343572}
+  - component: {fileID: 114854720738785014}
   m_Layer: 10
   m_Name: Enemy3
   m_TagString: enemy
@@ -80,7 +81,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 1, y: 0.696}
-    newSize: {x: 5, y: 3.48}
+    newSize: {x: 1, y: 0.696}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -105,6 +106,30 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114854720738785014
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1223880263560604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 644f014f9e4d7fe43ac36cc336fd6754, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: 0
+  exitPoint: {fileID: 4787923195067304, guid: 0ec2838050f551c42af44e5167dbc32d, type: 2}
+  waypoints:
+  - {fileID: 4088427181515998, guid: ee37b5d03d642584c914dd47a15b293e, type: 2}
+  - {fileID: 4257407530981652, guid: ee37b5d03d642584c914dd47a15b293e, type: 2}
+  - {fileID: 4079955144493090, guid: ee37b5d03d642584c914dd47a15b293e, type: 2}
+  - {fileID: 4890152693087608, guid: ee37b5d03d642584c914dd47a15b293e, type: 2}
+  - {fileID: 4361881507949926, guid: ee37b5d03d642584c914dd47a15b293e, type: 2}
+  - {fileID: 4944349878038604, guid: ee37b5d03d642584c914dd47a15b293e, type: 2}
+  - {fileID: 4090183062771514, guid: ee37b5d03d642584c914dd47a15b293e, type: 2}
+  - {fileID: 4825686045827380, guid: ee37b5d03d642584c914dd47a15b293e, type: 2}
+  - {fileID: 4068090395242424, guid: ee37b5d03d642584c914dd47a15b293e, type: 2}
+  navigationUpdate: 0.0001
 --- !u!212 &212730667142892072
 SpriteRenderer:
   m_ObjectHideFlags: 1
