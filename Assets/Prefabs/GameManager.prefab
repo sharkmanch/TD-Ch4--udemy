@@ -57,5 +57,5 @@ MonoBehaviour:
   - {fileID: 1921442039295354, guid: 39e701f534aa89c4db6cb7d8750cd990, type: 2}
   - {fileID: 1223880263560604, guid: aacf34029d476af4d8276b5e07c95524, type: 2}
   maxEnemiesOnScreen: 9
-  totalEnemies: 8
+  totalEnemies: 9
   enemiesPerSpawn: 1

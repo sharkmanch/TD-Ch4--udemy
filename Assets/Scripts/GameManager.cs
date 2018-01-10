@@ -17,7 +17,7 @@ public class GameManager : MonoBehaviour
     public int enemiesPerSpawn;
 
     private int enemiesOnScreen = 0;
-    const float spawnDelay = 0.5f;
+    const float spawnDelay = 1.0f;
 
 
 
@@ -70,7 +70,7 @@ public class GameManager : MonoBehaviour
             {
                 if (enemiesOnScreen < maxEnemiesOnScreen)
                 {
-                    GameObject newEnemy = Instantiate(enemies[1]) as GameObject;
+                    GameObject newEnemy = Instantiate(enemies[0]) as GameObject;
                     newEnemy.transform.position = spawnPoint.transform.position;
                     enemiesOnScreen += 1;
                 }

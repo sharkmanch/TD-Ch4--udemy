@@ -120,16 +120,16 @@ MonoBehaviour:
   target: 0
   exitPoint: {fileID: 4787923195067304, guid: 0ec2838050f551c42af44e5167dbc32d, type: 2}
   waypoints:
-  - {fileID: 4088427181515998, guid: ee37b5d03d642584c914dd47a15b293e, type: 2}
-  - {fileID: 4257407530981652, guid: ee37b5d03d642584c914dd47a15b293e, type: 2}
-  - {fileID: 4079955144493090, guid: ee37b5d03d642584c914dd47a15b293e, type: 2}
-  - {fileID: 4890152693087608, guid: ee37b5d03d642584c914dd47a15b293e, type: 2}
-  - {fileID: 4361881507949926, guid: ee37b5d03d642584c914dd47a15b293e, type: 2}
-  - {fileID: 4944349878038604, guid: ee37b5d03d642584c914dd47a15b293e, type: 2}
-  - {fileID: 4090183062771514, guid: ee37b5d03d642584c914dd47a15b293e, type: 2}
-  - {fileID: 4825686045827380, guid: ee37b5d03d642584c914dd47a15b293e, type: 2}
-  - {fileID: 4068090395242424, guid: ee37b5d03d642584c914dd47a15b293e, type: 2}
-  navigationUpdate: 0.0001
+  - {fileID: 4071510146715434, guid: ee37b5d03d642584c914dd47a15b293e, type: 2}
+  - {fileID: 4478245510379128, guid: ee37b5d03d642584c914dd47a15b293e, type: 2}
+  - {fileID: 4446766545661578, guid: ee37b5d03d642584c914dd47a15b293e, type: 2}
+  - {fileID: 4997815110697728, guid: ee37b5d03d642584c914dd47a15b293e, type: 2}
+  - {fileID: 4766313204378264, guid: ee37b5d03d642584c914dd47a15b293e, type: 2}
+  - {fileID: 4798722591449790, guid: ee37b5d03d642584c914dd47a15b293e, type: 2}
+  - {fileID: 4753245734031860, guid: ee37b5d03d642584c914dd47a15b293e, type: 2}
+  - {fileID: 4510168058421692, guid: ee37b5d03d642584c914dd47a15b293e, type: 2}
+  - {fileID: 4080348616774902, guid: ee37b5d03d642584c914dd47a15b293e, type: 2}
+  navigationUpdate: 0.01
 --- !u!212 &212250518246198692
 SpriteRenderer:
   m_ObjectHideFlags: 1
