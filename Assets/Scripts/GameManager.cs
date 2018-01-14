@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+public class GameManager : Singleton<GameManager> /* this GameManager is the type*/
 {
     public static GameManager instance = null;
     //creating the one single instance of game manager 
@@ -20,19 +20,20 @@ public class GameManager : MonoBehaviour
     const float spawnDelay = 1.0f;
 
 
-
-    private void Awake()
+    void Awake()
     {
-        if (instance == null)
-        {
-            instance = this;
-        }
-        else if (instance != this)
-        {
-            Destroy(gameObject);
-            DontDestroyOnLoad(gameObject);
-        }
+        /*  if (instance == null)
+          {
+              instance = this;
+          }
+          else if (instance != this)
+          {
+              Destroy(gameObject);
+              DontDestroyOnLoad(gameObject);
+          }
+      }*/
     }
+    //everytime creating a singleton we will have to rewrite this code over and over.
 
     // Use this for initialization
     void Start()
