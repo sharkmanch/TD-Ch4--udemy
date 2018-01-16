@@ -4,18 +4,23 @@ using UnityEngine;
 
 public class GameManager : Singleton<GameManager> /* this GameManager is the type*/
 {
-    public static GameManager instance = null;
+    private static GameManager instance = null;
     //creating the one single instance of game manager 
 
+    [SerializeField]
+    private GameObject spawnPoint;
 
-    public GameObject spawnPoint;
 
+    [SerializeField]
+    private GameObject[] enemies;
+    [SerializeField]
+    private int maxEnemiesOnScreen;
+    [SerializeField]
+    private int totalEnemies;
+    [SerializeField]
+    private int enemiesPerSpawn;
 
-    public GameObject[] enemies;
-    public int maxEnemiesOnScreen;
-    public int totalEnemies;
-    public int enemiesPerSpawn;
-
+    [SerializeField]
     private int enemiesOnScreen = 0;
     const float spawnDelay = 1.0f;
 
