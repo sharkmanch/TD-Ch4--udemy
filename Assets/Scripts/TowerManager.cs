@@ -21,6 +21,7 @@ public class TowerManager : Singleton<TowerManager> {
             RaycastHit2D hit = Physics2D.Raycast(worldPoint, Vector2.zero);
             if (hit.collider.tag == "buildSite")
             {
+                hit.collider.tag = "buildSiteFull";
                 placeTower(hit);
             }
 
