@@ -10,6 +10,7 @@ TagManager:
   - buildSite
   - Tower
   - buildSiteFull
+  - projectile
   layers:
   - Default
   - TransparentFX
@@ -49,4 +50,7 @@ TagManager:
     locked: 0
   - name: Items
     uniqueID: 1573841073
+    locked: 0
+  - name: Units
+    uniqueID: 1447700129
     locked: 0
